@@ -1,0 +1,71 @@
+@import "vars";
+@import "mixins";
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+nav {
+  //background-color: $navcolor;
+
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  letter-spacing: 0.2rem;
+}
+
+
+html, body, main {
+  height: 100%;
+  //background-color: lighten($navcolor, 50%);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin-top: 5rem;
+
+  img {
+    @include image-resize(64%, 36%);
+  }
+
+  .about_image {
+    @include image-resize(120%, 40%);
+  }
+  .video_skills {
+    padding: 5%;
+    img {
+      padding: 2%;
+    }
+  }
+
+  .software_knowledge {
+    padding: 5%;
+    img {
+      padding: 2%;
+    }
+  }
+}
+
+.contactform {
+  .hangouts {
+    padding-bottom: 5%;
+  }
+
+  img {
+    padding-right: 5%;
+    @include image-resize(15%, 15%);
+  }
+}
+

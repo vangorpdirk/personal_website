@@ -1,0 +1,6 @@
+@mixin image-resize($width, $height) {
+  width: $width;
+  height: $height;
+  object-fit: fill;
+}
+
