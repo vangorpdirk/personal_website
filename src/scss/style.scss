@@ -1,34 +1,15 @@
 @import "vars";
 @import "mixins";
 
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
 nav {
-  //background-color: $navcolor;
-
-  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: larger;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 
 
 html, body, main {
   height: 100%;
-  //background-color: lighten($navcolor, 50%);
 }
 
 .container {
@@ -41,7 +22,7 @@ html, body, main {
   }
 
   .about_image {
-    @include image-resize(120%, 40%);
+    @include image-resize(100%, auto);
   }
   .video_skills {
     padding: 5%;
